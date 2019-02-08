@@ -61,8 +61,15 @@ public class Equipe extends Candidat
 	
 	public Set<Personne> getPersonnesAAjouter()
 	{
-		// TODO retourner les personnes que l'on peut ajouter dans cette équipe.
-		return null;
+		Set<Personne> listeDesPersonnesDisponible = new TreeSet<>();
+		
+		for (Personne personne : Inscriptions.getInscriptions().getPersonnes()) {
+			if (!getMembres().contains(personne)) {
+				listeDesPersonnesDisponible.add(personne);				
+			}
+		}
+		
+		return listeDesPersonnesDisponible;
 	}
 	
 	@Override

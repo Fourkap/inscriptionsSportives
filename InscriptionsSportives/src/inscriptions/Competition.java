@@ -57,8 +57,7 @@ public class Competition implements Comparable<Competition>, Serializable
 	
 	public boolean inscriptionsOuvertes()
 	{
-		// TODO retourner vrai si et seulement si la date système est antérieure à la date de clôture.
-		return true;
+		return getDateCloture().isAfter(LocalDate.now());
 	}
 	
 	/**
@@ -89,8 +88,10 @@ public class Competition implements Comparable<Competition>, Serializable
 	
 	public void setDateCloture(LocalDate dateCloture)
 	{
-		// TODO vérifier que l'on avance pas la date.
-		this.dateCloture = dateCloture;
+		if (getDateCloture().isBefore(dateCloture)) {
+			this.dateCloture = dateCloture;	
+		}
+				
 	}
 	
 	/**
@@ -113,10 +114,12 @@ public class Competition implements Comparable<Competition>, Serializable
 	
 	public boolean add(Personne personne)
 	{
-		// TODO vérifier que la date de clôture n'est pas passée
-		if (enEquipe)
-			throw new RuntimeException();
+		if (enEquipe || ! inscriptionsOuvertes()) {
+			throw new RuntimeException("La competition est close ou est r�serv� aux �quipes.");
+		}
+		
 		personne.add(this);
+		
 		return candidats.add(personne);
 	}
 
@@ -130,10 +133,12 @@ public class Competition implements Comparable<Competition>, Serializable
 
 	public boolean add(Equipe equipe)
 	{
-		// TODO vérifier que la date de clôture n'est pas passée
-		if (!enEquipe)
-			throw new RuntimeException();
+		if (!enEquipe || !inscriptionsOuvertes()) {
+			throw new RuntimeException("La competition est close ou individuel.");			
+		}
+		
 		equipe.add(this);
+		
 		return candidats.add(equipe);
 	}
 	
@@ -144,8 +149,15 @@ public class Competition implements Comparable<Competition>, Serializable
 	
 	public Set<Candidat> getCandidatsAInscrire()
 	{
-		// TODO les candidats que l'on peut inscrire à cette compétition.
-		return null;
+		Set<Candidat> listeDesCandidatsDisponible = new TreeSet<>();
+		
+		for (Candidat candidat : inscriptions.getCandidats()) {
+			if (!(getCandidats()).contains(candidat)) {
+				listeDesCandidatsDisponible.add(candidat);						
+			}	
+		}
+		
+		return listeDesCandidatsDisponible;
 	}
 
 	/**

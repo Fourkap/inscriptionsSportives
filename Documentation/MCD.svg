@@ -1,0 +1,120 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="388" height="304" view_box="0 0 388 304"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Thu, 31 Jan 2019 15:13:31</desc>
+
+<rect id="frame" x="0" y="0" width="388" height="304" fill="#ffffbf" stroke="none" stroke-width="0"/>
+
+<!-- Association Relier -->
+<line x1="70" y1="51" x2="70" y2="270" stroke="#f46d43" stroke-width="2"/>
+<text x="75.0" y="110" fill="#1a9850" font-family="Verdana" font-size="12">1,1</text>
+<line x1="202" y1="270" x2="70" y2="270" stroke="#f46d43" stroke-width="2"/>
+<text x="118" y="287.0" fill="#1a9850" font-family="Verdana" font-size="12">0,1</text>
+<g id="association-Relier">
+	<path d="M 81 245 a 14 14 90 0 1 14 14 V 270 h -50 V 259 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 95 270.0 v 11 a 14 14 90 0 1 -14 14 H 59 a 14 14 90 0 1 -14 -14 V 270.0 H 50" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="45" y="245" width="50" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="45" y1="270" x2="95" y2="270" stroke="#f46d43" stroke-width="1"/>
+	<text x="52" y="262.7" fill="#000000" font-family="Verdana" font-size="12">Relier</text>
+</g>
+
+<!-- Association Devenir -->
+<line x1="326" y1="51" x2="326" y2="270" stroke="#f46d43" stroke-width="2"/>
+<text x="331.0" y="102" fill="#1a9850" font-family="Verdana" font-size="12">1,1</text>
+<line x1="202" y1="270" x2="326" y2="270" stroke="#f46d43" stroke-width="2"/>
+<text x="265" y="287.0" fill="#1a9850" font-family="Verdana" font-size="12">0,1</text>
+<g id="association-Devenir">
+	<path d="M 343 245 a 14 14 90 0 1 14 14 V 270 h -62 V 259 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 357 270.0 v 11 a 14 14 90 0 1 -14 14 H 309 a 14 14 90 0 1 -14 -14 V 270.0 H 62" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="295" y="245" width="62" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="295" y1="270" x2="357" y2="270" stroke="#f46d43" stroke-width="1"/>
+	<text x="302" y="262.7" fill="#000000" font-family="Verdana" font-size="12">Devenir</text>
+</g>
+
+<!-- Association Appartenir -->
+<line x1="70" y1="51" x2="202" y2="51" stroke="#f46d43" stroke-width="2"/>
+<text x="136" y="68.0" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<line x1="326" y1="51" x2="202" y2="51" stroke="#f46d43" stroke-width="2"/>
+<text x="246" y="68.0" fill="#1a9850" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-Appartenir">
+	<path d="M 227 26 a 14 14 90 0 1 14 14 V 51 h -78 V 40 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 241 51.0 v 11 a 14 14 90 0 1 -14 14 H 177 a 14 14 90 0 1 -14 -14 V 51.0 H 78" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="163" y="26" width="78" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="163" y1="51" x2="241" y2="51" stroke="#f46d43" stroke-width="1"/>
+	<text x="170" y="43.7" fill="#000000" font-family="Verdana" font-size="12">Appartenir</text>
+</g>
+
+<!-- Association Inscrire -->
+<line x1="202" y1="270" x2="70" y2="169" stroke="#f46d43" stroke-width="2"/>
+<text x="168.57457047784652" y="237" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<line x1="202" y1="169" x2="70" y2="169" stroke="#f46d43" stroke-width="2"/>
+<text x="107" y="186.0" fill="#1a9850" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-Inscrire">
+	<path d="M 87 144 a 14 14 90 0 1 14 14 V 169 h -62 V 158 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 101 169.0 v 11 a 14 14 90 0 1 -14 14 H 53 a 14 14 90 0 1 -14 -14 V 169.0 H 62" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="39" y="144" width="62" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="39" y1="169" x2="101" y2="169" stroke="#f46d43" stroke-width="1"/>
+	<text x="46" y="161.7" fill="#000000" font-family="Verdana" font-size="12">Inscrire</text>
+</g>
+
+<!-- Entity Personne -->
+<g id="entity-Personne">
+	<g id="frame-Personne">
+		<rect x="9" y="9" width="122" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="9" y="34.0" width="122" height="59" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="9" y="9" width="122" height="84" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="9" y1="34" x2="131" y2="34" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="42" y="26.7" fill="#000000" font-family="Verdana" font-size="12">Personne</text>
+	<text x="14" y="51.8" fill="#000000" font-family="Verdana" font-size="12">numero_personne</text>
+	<line x1="14" y1="54" x2="125" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">prenom</text>
+	<text x="14" y="85.8" fill="#000000" font-family="Verdana" font-size="12">email</text>
+</g>
+
+<!-- Entity Candidat -->
+<g id="entity-Candidat">
+	<g id="frame-Candidat">
+		<rect x="144" y="245" width="116" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="144" y="270.0" width="116" height="25" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="144" y="245" width="116" height="50" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="144" y1="270" x2="260" y2="270" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="175" y="262.7" fill="#000000" font-family="Verdana" font-size="12">Candidat</text>
+	<text x="149" y="287.8" fill="#000000" font-family="Verdana" font-size="12">numero_candidat</text>
+	<line x1="149" y1="290" x2="255" y2="290" stroke="#000000" stroke-width="1"/>
+</g>
+
+<!-- Entity Competition -->
+<g id="entity-Competition">
+	<g id="frame-Competition">
+		<rect x="134" y="118" width="136" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="134" y="143.0" width="136" height="77" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="134" y="118" width="136" height="102" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="134" y1="143" x2="270" y2="143" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="165" y="135.7" fill="#000000" font-family="Verdana" font-size="12">Competition</text>
+	<text x="139" y="160.7" fill="#000000" font-family="Verdana" font-size="12">numero_competition</text>
+	<line x1="139" y1="163" x2="265" y2="163" stroke="#000000" stroke-width="1"/>
+	<text x="139" y="177.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+	<text x="139" y="194.8" fill="#000000" font-family="Verdana" font-size="12">date_fin</text>
+	<text x="139" y="211.8" fill="#000000" font-family="Verdana" font-size="12">equipe</text>
+</g>
+
+<!-- Entity Equipe -->
+<g id="entity-Equipe">
+	<g id="frame-Equipe">
+		<rect x="273" y="17" width="106" height="25" fill="#a6d96a" stroke="#a6d96a" stroke-width="0"/>
+		<rect x="273" y="42.0" width="106" height="43" fill="#d9ef8b" stroke="#d9ef8b" stroke-width="0"/>
+		<rect x="273" y="17" width="106" height="68" fill="none" stroke="#66bd63" stroke-width="2"/>
+		<line x1="273" y1="42" x2="379" y2="42" stroke="#66bd63" stroke-width="1"/>
+	</g>
+	<text x="305" y="34.7" fill="#000000" font-family="Verdana" font-size="12">Equipe</text>
+	<text x="278" y="59.8" fill="#000000" font-family="Verdana" font-size="12">numero_equipe</text>
+	<line x1="278" y1="62" x2="373" y2="62" stroke="#000000" stroke-width="1"/>
+	<text x="278" y="76.8" fill="#000000" font-family="Verdana" font-size="12">nom</text>
+</g>
+</svg>
