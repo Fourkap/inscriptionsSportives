@@ -11,6 +11,12 @@ import java.time.LocalDate;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  * Point d'entrée dans l'application, un seul objet de type Inscription
  * permet de gérer les compétitions, candidats (de type equipe ou personne)
@@ -241,6 +247,41 @@ public class Inscriptions implements Serializable
 	
 	public static void main(String[] args)
 	{
+		Connection c = null;
+		  try
+		  {
+		   Class.forName("com.mysql.cj.jdbc.Driver");
+		   String url = "jdbc:mysql://localhost/test", user = "", password = "";
+		   c = DriverManager.getConnection(url, user, password);
+		   String req = "select * from test";
+		   Statement s = c.createStatement();
+		   ResultSet rs = s.executeQuery(req);
+		   while (rs.next())
+		   {
+		    System.out.println(rs.getInt(1) + " : " + rs.getString(2));
+		   }
+		  }
+		  catch (ClassNotFoundException e)
+		  {
+		   System.out.println("Pilote JDBC non install�.");
+		  }
+		  catch (SQLException e)
+		  {
+		   System.out.println(e);
+		  }
+		  finally
+		  {
+		   try
+		   {
+		    if (c != null)
+		     c.close();
+		   }
+		   catch (SQLException e)
+		   {
+		    System.out.println("Impossible de fermer la connection.");
+		   }
+		  }
+		  
 		Inscriptions inscriptions = Inscriptions.getInscriptions();
 		Competition flechettes = inscriptions.createCompetition("Mondial de fléchettes", null, false);
 		Personne tony = inscriptions.createPersonne("Tony", "Dent de plomb", "azerty"), 
